@@ -1,0 +1,16 @@
+name: myownflow
+
+on: push
+
+env: 
+  cloud: google-cloud
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      greeting: Hello
+    steps: 
+      - name: "Say hello Najish its Monday"
+        run: echo "$greeting $firstname is using $cloud"
+        env:
+         firstname: Najish
