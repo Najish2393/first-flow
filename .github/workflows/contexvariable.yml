@@ -1,0 +1,19 @@
+name: contex variable
+
+on: workflow_dispatch
+env:
+    cloud: AWS
+
+jobs: 
+  greetings_card: mycard
+    runs-ons:  ubuntu-latest
+      steps:
+      - name: myfirstcard
+        run: echo "Hello world ${{var.GITHUB_ACTOR}} is expert in $cloud"
+     
+   
+    
+  
+    
+
+ 
