@@ -5,11 +5,11 @@ env:
     cloud: AWS
 
 jobs: 
-  greetings_card: mycard
-    runs-on:  ubuntu-latest
-      steps:
+  greetings_card: 
+    runs-on: ubuntu-latest
+    steps:
       - name: myfirstcard
-        run: echo "Hello world ${{var.GITHUB_ACTOR}} is expert in $cloud"
+        run: echo "Hello world ${{GITHUB_ACTOR}} is expert in $cloud"
      
    
     
