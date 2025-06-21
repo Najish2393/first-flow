@@ -6,7 +6,7 @@ env:
 
 jobs: 
   greetings_card: mycard
-    runs-ons:  ubuntu-latest
+    runs-on:  ubuntu-latest
       steps:
       - name: myfirstcard
         run: echo "Hello world ${{var.GITHUB_ACTOR}} is expert in $cloud"
