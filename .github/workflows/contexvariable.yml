@@ -1,10 +1,11 @@
 name: contex variable
 
-on: workflow_dispatch 
-inputs: 
-  number1: 
+on: 
+ workflow_dispatch :
+   inputs: 
+     number1: 
       description: addition
-      defualt: "o"
+      default: "o"
       required: true
 jobs: 
   greetings_job: 
